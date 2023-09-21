@@ -1,0 +1,26 @@
+int nota;
+
+        while (true)
+        {
+            Console.WriteLine("Digite uma nota entre '0' e '10': ");
+
+            if (int.TryParse(Console.ReadLine(), out nota))
+            {
+                if (nota >= 0 && nota <= 10)
+                {
+                    Console.WriteLine($"A nota escolhida foi {nota}.");
+                    break;
+                }
+                else
+                {
+                    Console.WriteLine("A nota não esta entre '0' e ''0'. Digite novamente.");
+                }
+            }
+            else
+            {
+                Console.WriteLine("Entrada inválida. Digite um valor numérico.");
+            }
+        }
+
+        Console.ReadLine(); 
+ 
