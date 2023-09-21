@@ -1,0 +1,21 @@
+string nome, senha;
+
+Console.WriteLine("Digite o seu nome de usuário: ");
+nome = Console.ReadLine();
+
+while (true)
+{
+    Console.WriteLine("Digite a sua senha: ");
+    senha = Console.ReadLine();
+
+    if (senha != nome)
+    {
+        Console.WriteLine("A sua conta foi cadastrada!");
+        break;
+    }
+    else
+    {
+        Console.WriteLine("A 'senha' deve ser diferente de 'nome'");
+    }
+}
+Console.ReadLine();
