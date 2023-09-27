@@ -1,0 +1,21 @@
+int quantidadeNumeros = 5;
+int[] numeros = new int[quantidadeNumeros];
+int soma = 0;
+
+
+for (int i = 0; i < quantidadeNumeros; i++)
+{
+    Console.Write("Digite o {0}º número: ", i + 1);
+    numeros[i] = Convert.ToInt32(Console.ReadLine());
+    soma += numeros[i]; // Acumula a soma dos números
+}
+
+// Média
+double media = (double)soma / quantidadeNumeros;
+
+// Soma e a média
+Console.WriteLine("A soma dos números é: " + soma);
+Console.WriteLine("A média dos números é: " + media);
+
+Console.ReadLine();
+
